@@ -40,7 +40,7 @@
     // <p>Configure tool-specific properties.</p>
     "customizations": {
         "vscode": {
-            "extensions": ["CodeChat.codechat"]
+            "extensions": ["CodeChat.codechat", "mshr-h.VerilogHDL"]
         }
     }
 }
