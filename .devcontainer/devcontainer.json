@@ -29,17 +29,17 @@
             "label": "CodeChat Client<->Server websocket",
             "requireLocalPort": true,
             "elevateIfNeeded": true,
-            "protocol": "https"
+            "protocol": "http"
         }
     },
     // <p>Use 'postCreateCommand' to run commands after the container is
     //     created.</p>
-    "postCreateCommand": "sudo bash ./.devcontainer/postCreateCommand.sh",
+    "postCreateCommand": "sudo bash ~/.devcontainer/postCreateCommand.sh",
 
     // <p>Configure tool-specific properties.</p>
     "customizations": {
         "vscode": {
-            "extensions": ["ms-vscode.live-server", "oscarlevin.pretext-tools"]
+            "extensions": ["ms-vscode.live-server"]
         }
     }
 }

@@ -10,4 +10,5 @@ echo "Installing the CodeChat Server..."
 python3 -m pip install --user CodeChat-Server "Sphinx<6"
 
 echo "Installing iVerilog..."
-sudo apt install -y iverilog
+sudo apt update
+sudo apt install -y verilog
