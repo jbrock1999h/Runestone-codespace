@@ -6,10 +6,7 @@
 //         codespace</a>.</p>
 {
     "name": "Runestone editor",
-    "image": "mcr.microsoft.com/devcontainers/python:3",
-    "features": {
-        "ghcr.io/rocker-org/devcontainer-features/pandoc:1": {}
-    },
+    "image": "mcr.microsoft.com/devcontainers/python:3.10",
     "forwardPorts": [
         // <p>The port used for an HTTP connection from the CodeChat Client to
         //     the CodeChat Server.</p>
