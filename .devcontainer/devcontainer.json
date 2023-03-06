@@ -6,6 +6,7 @@
 //         codespace</a>.</p>
 {
     "name": "Runestone editor",
+    // For now, the bookserver requires an old version of asyncpg that doesn't build on Python 3.11, so stick with 3.10.
     "image": "mcr.microsoft.com/devcontainers/python:3.10",
     "forwardPorts": [
         // <p>The port used for an HTTP connection from the CodeChat Client to
