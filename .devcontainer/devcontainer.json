@@ -42,7 +42,7 @@
     // <p>Configure tool-specific properties.</p>
     "customizations": {
         "vscode": {
-            "extensions": ["ms-vscode.live-server"]
+            "extensions": ["CodeChat.codechat"]
         }
     }
 }
