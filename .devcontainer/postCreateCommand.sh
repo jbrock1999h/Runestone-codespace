@@ -6,9 +6,14 @@
 echo "Updating pip..."
 python3 -m pip install --user --upgrade pip
 
-echo "Installing the CodeChat Server..."
-python3 -m pip install --user CodeChat-Server "Sphinx<6"
+echo "Installing Python tools..."
+python3 -m pip install --user CodeChat-Server runestone
 
 echo "Installing iVerilog..."
 sudo apt update
 sudo apt install -y verilog
+
+echo "Installing Digital System Design textbook..."
+git clone https://github.com/bjones1/digital_systems_design.git
+cd digital_systems_design
+python3 waf configure
