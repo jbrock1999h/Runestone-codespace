@@ -6,9 +6,13 @@
 //         codespace</a>.</p>
 {
     "name": "Runestone editor",
-    // For now, the bookserver requires an old version of asyncpg that doesn't build on Python 3.11, so stick with 3.10.
+    // <p>For now, the bookserver requires an old version of asyncpg that
+    //     doesn't build on Python 3.11, so stick with 3.10.</p>
     "image": "mcr.microsoft.com/devcontainers/python:3.10",
     "forwardPorts": [
+        // <p>The port used for a Thrift connection between the VSCode CodeChat
+        //     extension and the CodeChat Server.</p>
+        27376,
         // <p>The port used for an HTTP connection from the CodeChat Client to
         //     the CodeChat Server.</p>
         27377,
@@ -17,24 +21,33 @@
         27378
     ],
     "portsAttributes": {
+        "27376": {
+            "label": "VSCode extension <-> CodeChat Server",
+            "requireLocalPort": true
+        },
         "27377": {
             "label": "CodeChat Client",
             "requireLocalPort": true,
-            "elevateIfNeeded": true,
             "protocol": "https",
-            // Per https://github.com/community/community/discussions/10394, this isn't supported yet.
+            // <p>Per <a
+            //         href="https://github.com/community/community/discussions/10394">this
+            //         issue</a>, setting port visibility isn't supported yet.
+            //     Since the CodeChat Client runs in the local browser, this is
+            //     required so it can request pages from the CodeChat Server
+            //     running in the codespaces container.</p>
             "visibility": "public"
         },
         "27378": {
             "label": "CodeChat Client<->Server websocket",
             "requireLocalPort": true,
-            "elevateIfNeeded": true,
-            "protocol": "http",
+            // <p>Likewise, not yet supported. It's used by the CodeChat Client
+            //     in the local browser to communicate with the CodeChat Server
+            //     in the codespaces container using a websocket.</p>
             "visibility": "public"
         }
     },
-    // <p>Use 'postCreateCommand' to run commands after the container is
-    //     created.</p>
+    // <p>Use <code>postCreateCommand</code> to run commands after the container
+    //     is created.</p>
     "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
 
     // <p>Configure tool-specific properties.</p>
