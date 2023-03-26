@@ -1,0 +1,36 @@
+<h1>Runestone Codespace</h1>
+<h2>Brandon Black and Jeffrey Greer Implementation Ideas:</h2>
+<h3>Understanding:</h3>
+<p><strong>Step </strong>1: Read and Understand the <strong><span
+            style="text-decoration: underline;">Dev Containers</span>
+    </strong>with the <a
+        href="https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#creating-a-custom-dev-container-configuration">"Introduction
+        to Dev Containers"</a>&nbsp;Document in GitHub.</p>
+<p class="border-bottom-0"><strong>Step </strong>2: Read and Understand how to
+    add software and IDEs to the <span
+        style="text-decoration: underline;"><strong>Dockerfile</strong></span>
+    with the python example in <em>"<a
+            href="https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces">Setting
+            up a Python project for GitHub Codespaces</a>"</em> Document in
+    GitHub.</p>
+<h3>Implementation:</h3>
+<p><strong>Step </strong>1: Create a <span
+        style="text-decoration: underline;"><strong>DockerFile</strong></span>
+    to Replace the PostCreateCommand.sh.</p>
+<p><strong>Step </strong>2: Add the Command:&nbsp;</p>
+<pre><code class="hljs language-json"><span class="hljs-attr">"build"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-attr">"dockerfile"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Dockerfile"</span> <span class="hljs-punctuation">}</span></code></pre>
+<p>&nbsp; &nbsp; to the <span
+        style="text-decoration: underline;"><strong>DevContainer.Json
+            File</strong></span>.</p>
+<p><strong>Step </strong>3: Add a few software as a test like python and assure
+    that the <span
+        style="text-decoration: underline;"><strong>Dockerfile</strong></span>
+    is operating as intended.</p>
+<p>If it is not working as intended, debug and make sure the <span
+        style="text-decoration: underline;"><strong>Dockerfile</strong></span>
+    is syntaxed correctly. If it is working as intended, Proceed to next Step.
+</p>
+<p><strong>Step </strong>4: Continue to Add all software needed for codespace.
+    <span style="text-decoration: underline;">May be best to do this one
+        software at a time.</span></p>
+<h3>Report:</h3>
