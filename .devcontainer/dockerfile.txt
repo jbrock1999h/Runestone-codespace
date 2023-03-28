@@ -1,0 +1,7 @@
+# Choosing base image
+FROM python:3.9
+
+
+# Choosing all applications to run in base image
+RUN apt-get update && \
+    apt-get install -y python3

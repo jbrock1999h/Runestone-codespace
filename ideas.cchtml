@@ -1,4 +1,10 @@
 <h1>Runestone Codespace</h1>
+<h2>Goal:&nbsp;</h2>
+<p>The goal of this project is to implement a IDE Codespace for authors to
+    create and edit books. Instead of using an ssh file, we are implementing a
+    Dockerfile that will be used to download all the needed software into one
+    container for any user to utilize without the need of downloading it for
+    themselves.&nbsp;</p>
 <h2>Brandon Black and Jeffrey Greer Implementation Ideas:</h2>
 <h3>Understanding:</h3>
 <p><strong>Step </strong>1: Read and Understand the <strong><span

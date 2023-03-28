@@ -48,7 +48,14 @@
     },
     // <p>Use <code>postCreateCommand</code> to run commands after the container
     //     is created.</p>
-    "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+    //"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+
+    // <p> Use a dockerfile to append all needed software to create needed codespace <p>
+    "build": {
+        "dockerfile": "dockerfile",
+        "context": ".."
+      },
+    
 
     // <p>Configure tool-specific properties.</p>
     "customizations": {
