@@ -43,3 +43,5 @@
 <p><strong>Attempt 1:&nbsp;</strong>I created a dockerfile with the image of
     python 3 and installed python using the run command. It said container
     build failed. Will ask Dr. Jones tomorrow.&nbsp;</p>
+<p><strong>Attempt 2:&nbsp;</strong>I attemped to change the dockerfile and the .json file but I am stuck with a directory issue becasue it cannot locate the dockerfile. If no results by the end of the night, I will talk 
+to Dr. Jones about it tomorrow.&nbsp;</p>
