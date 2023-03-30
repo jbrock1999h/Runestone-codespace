@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 
-# <h1>postCreateCommand.sh - Install dependencies after the Codespace starts up
-# </h1>
-# <p>install / upgrade pip</p>
+echo "Updating system packages and installing iVerilog..."
+apt update
+apt install -y verilog git
+
+echo "Creating a Python virtual environment..."
+python3 -m venv venv
+source venv/bin/activate
+
 echo "Updating pip..."
-python3 -m pip install --user --upgrade pip
+pip install --upgrade pip
 
 echo "Installing Python tools..."
-python3 -m pip install --user CodeChat-Server runestone bookserver
-
-echo "Installing iVerilog..."
-sudo apt update
-sudo apt install -y verilog
+pip install CodeChat-Server runestone bookserver
 
 echo "Installing Digital System Design textbook..."
 git clone https://github.com/bjones1/digital_systems_design.git
