@@ -52,8 +52,8 @@
 
     // <p> Use a dockerfile to append all needed software to create needed codespace <p>
     "build": {
-        "dockerfile": "dockerfile",
-        "context": ".."
+        "dockerfile": ".devcontainer/Dockerfile",
+        "context": "."
       },
     
 
