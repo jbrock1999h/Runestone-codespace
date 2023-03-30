@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+# Update package lists and install required packages
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip verilog
+
+# Upgrade pip and install required Python tools
+RUN python3 -m pip install --user --upgrade pip && \
+    python3 -m pip install --user CodeChat-Server runestone bookserver
