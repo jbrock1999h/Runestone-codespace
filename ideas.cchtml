@@ -40,8 +40,17 @@
     <span style="text-decoration: underline;">May be best to do this one
         software at a time.</span></p>
 <h3>Report:</h3>
-<p><strong>Attempt 1:&nbsp;</strong>I created a dockerfile with the image of
-    python 3 and installed python using the run command. It said container
-    build failed. Will ask Dr. Jones tomorrow.&nbsp;</p>
-<p><strong>Attempt 2:&nbsp;</strong>I attemped to change the dockerfile and the .json file but I am stuck with a directory issue becasue it cannot locate the dockerfile. If no results by the end of the night, I will talk 
-to Dr. Jones about it tomorrow.&nbsp;</p>
+<p><strong>Update 1: </strong>I created a dockerfile with the image of python 3
+    and installed python using the run command. It said container build failed.
+    Will ask Dr. Jones tomorrow.&nbsp;</p>
+<p><strong>Update 2: </strong>I attemped to change the dockerfile and the .json
+    file but I am stuck with a directory issue becasue it cannot locate the
+    dockerfile. If no results by the end of the night, I will talk to Dr. Jones
+    about it tomorrow.&nbsp;</p>
+<p><strong>Update 3:&nbsp;</strong>The issue is that your dockerfile does not
+    have any extension on the file. That is why the .json file could not find
+    the Dockerfile. By removing the extension, the container builds
+    successfully!</p>
+<p><strong>Update 4:&nbsp;</strong>I have added more software development tools
+    to the dockerfile such as LaTeX, sage, and pdf tools.&nbsp;</p>
+<p>&nbsp;</p>
