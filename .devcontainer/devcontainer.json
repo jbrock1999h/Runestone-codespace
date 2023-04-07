@@ -47,8 +47,8 @@
         }
     },
     // <p>Use <code>postCreateCommand</code> to run commands after the container
-    //     is created.</p>
-    "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+    //     is created. See the <a href="https://containers.dev/implementors/json_reference/#lifecycle-scripts">docs</a>.</p>
+    "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
 
     // <p>Use a Dockerfile to build a container, so that users see very quick startup times.<p>
     "build": {
@@ -59,7 +59,6 @@
     "customizations": {
         "codespaces": {
             "openFiles": [
-                "make-port-public.png",
                 "source/main.ptx",
                 "project.ptx",
                 "publication/publication.ptx"
@@ -72,7 +71,10 @@
                 },
                 "editor.snippetSuggestions": "top",
                 "xml.validation.enabled": false,
-                "editor.wordWrap": "on"
+                // Enable word wrapping.
+                "editor.wordWrap": "on",
+                // Use the custom CodeChat Server start command to deal with port weirdness in a CodeSpace.
+                "CodeChat.CodeChatServer.Command": "/workspaces/Runestone-codespace/.devcontainer/CodeChat_Server.sh"
             },
             "extensions": [
                 "CodeChat.codechat",

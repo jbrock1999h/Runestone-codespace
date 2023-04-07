@@ -3,11 +3,6 @@
 # Create a new PreTeXt project.
 pretext new -d .
 
-# For some reason, there's often junk on the opened ports. Start the server to let it read this junk, so the next invocation will be clean.
-CodeChat_Server serve &
-sleep 2
-kill %1
-
 # For the Digital System Design book...
 #echo "Installing Digital System Design textbook..."
 #apt install iverilog
