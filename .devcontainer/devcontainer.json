@@ -50,7 +50,7 @@
     //     is created.</p>
     //"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
 
-    // <p> Use a dockerfile to append all needed software to create needed codespace <p>
+    // <p>Use a Dockerfile to build a container, so that users see very quick startup times.<p>
     "build": {
         "dockerfile": "Dockerfile"
     },

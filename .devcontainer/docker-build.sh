@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
-
+# <h1><code>docker-build.sh</code> - Perform installs during the docker container build process</h1>
+# <p>Prevent interactive debconf during installations.</p>
 set DEBIAN_FRONTEND=noninteractive
 
-# Update package lists and install required packages
+# Install textbook authoring support software: LaTeX, sage, and other pdf tools.
 apt update
-apt install -y python3 python3-pip
+apt install -y --no-install-recommends python3-pip texlive texlive-latex-extra texlive-fonts-extra texlive-xetex texlive-science texlive-music sagemath ghostscript pdf2svg
 
-# Upgrade pip and install required Python tools
+# Upgrade pip and install required Python tools.
 python3 -m pip install --user --upgrade pip
-python3 -m pip install --user CodeChat-Server runestone pretext iverilog
-
-# Install more textbook developing software: LaTeX, sage, and other pdf tools
-apt install -y --no-install-recommends texlive texlive-latex-extra texlive-fonts-extra texlive-xetex texlive-science texlive-music sagemath ghostscript pdf2svg
+python3 -m pip install --user CodeChat-Server runestone pretext
