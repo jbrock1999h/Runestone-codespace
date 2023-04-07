@@ -8,5 +8,5 @@ apt update
 apt install -y --no-install-recommends python3-pip texlive texlive-latex-extra texlive-fonts-extra texlive-xetex texlive-science texlive-music sagemath ghostscript pdf2svg
 
 # Upgrade pip and install required Python tools.
-python3 -m pip install --user --upgrade pip
-python3 -m pip install --user CodeChat-Server runestone pretext
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade CodeChat-Server runestone pretext
