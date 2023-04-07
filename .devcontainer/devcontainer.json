@@ -53,8 +53,7 @@
     // <p> Use a dockerfile to append all needed software to create needed codespace <p>
     "build": {
         "dockerfile": "Dockerfile"
-      },
-    
+    },
 
     // <p>Configure tool-specific properties.</p>
     "customizations": {
