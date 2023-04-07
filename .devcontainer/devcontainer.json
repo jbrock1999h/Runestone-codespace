@@ -48,7 +48,7 @@
     },
     // <p>Use <code>postCreateCommand</code> to run commands after the container
     //     is created.</p>
-    //"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+    "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
 
     // <p>Use a Dockerfile to build a container, so that users see very quick startup times.<p>
     "build": {
@@ -57,8 +57,29 @@
 
     // <p>Configure tool-specific properties.</p>
     "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "make-port-public.png",
+                "source/main.ptx",
+                "project.ptx",
+                "publication/publication.ptx"
+            ]
+        },
         "vscode": {
-            "extensions": ["CodeChat.codechat", "mshr-h.VerilogHDL"]
+            "settings": {
+                "editor.quickSuggestions": {
+                    "other": "off"
+                },
+                "editor.snippetSuggestions": "top",
+                "xml.validation.enabled": false,
+                "editor.wordWrap": "on"
+            },
+            "extensions": [
+                "CodeChat.codechat",
+                "mshr-h.VerilogHDL",
+                "ms-vscode.live-server",
+                "oscarlevin.pretext-tools"
+            ]
         }
     }
 }
