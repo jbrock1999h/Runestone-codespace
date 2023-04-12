@@ -8,6 +8,7 @@
     <li><a href=".devcontainer/docker-build.sh">docker-build.sh</a></li>
     <li><a href=".devcontainer/postCreateCommand.sh">postCreateCommand.sh</a>
     </li>
+    <li><a href=".devcontainer/CodeChat_Server.sh">CodeChat_Server.sh</a></li>
 </ol>
 <h2>Supporting files</h2>
 <ol>
