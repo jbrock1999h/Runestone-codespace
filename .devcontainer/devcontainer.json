@@ -8,7 +8,6 @@
     "name": "Runestone editor",
     // <p>For now, the bookserver requires an old version of asyncpg that
     //     doesn't build on Python 3.11, so stick with 3.10.</p>
-    "image": "mcr.microsoft.com/devcontainers/python:3.10",
     "forwardPorts": [
         // <p>The port used for a Thrift connection between the VSCode CodeChat
         //     extension and the CodeChat Server.</p>
