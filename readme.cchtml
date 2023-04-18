@@ -1,0 +1,62 @@
+<h1>Runestone Interactive - Author Toolkit Prewriting:</h1>
+<h3>1. Describe the feature you will add:</h3>
+<p class="MsoNormal">The previous team created a codespace that will allow us
+    to create and alter a book quickly and easily. Our first task will be to
+    implement a codespaces container for a e-textbook picked out by Dr. Jones,
+    and we will use the previous team's codespace container as a basis for this
+    task. We will then create a button in this textbook which will directly
+    open the codespace of the associated GitHub repository so that the author
+    can easily and directly edit the textbook. For this task, we need to decide
+    where the button should be, design and create it, and have it hyperlink to
+    the codespace. We will need to put the button somewhere that won&rsquo;t
+    change, like in the table of contents, or near the search bar:</p>
+<p class="MsoNormal"><img src="Prewriting.png" alt="" width="624" height="547">
+</p>
+<p class="MsoNormal">In order to create the button, I believe that we will need
+    to edit source/main.ptx using the <a
+        href="https://www.w3.org/TR/xinclude-11/">PreTeXt libraries</a>, since
+    it is linked in the pretext tag at the beginning of the code.</p>
+<h3>2. Define which repository/repositories your code will be added to:</h3>
+<p>Our project will require us to use and make edits to the <a
+        href="https://github.com/bjones1/Runestone-codespace">Runestone-codespace</a>
+    repository.</p>
+<h3>3. Specify what libraries, languages, and interfaces your code must work
+    with:</h3>
+<p>This project requires knowledge of HTML, Javascript, Linux commands, and
+    some <a href="https://www.w3.org/TR/xinclude-11/">preTeXt libraries</a>. We
+    will code mostly in a browser version of Visual Studio Code, since this
+    project will require the use of <a
+        href="https://docs.github.com/en/codespaces/overview">Github
+        Codespaces</a>.</p>
+<h3>4. Detail a series of steps you will follow to complete this feature:</h3>
+<p>1. Get familiar with Github Codespaces and the template textbook while
+    waiting to get the practice textbook from Dr. Jones.</p>
+<p>2. Implement the codespaces container with that textbook.</p>
+<p>3. Create an "edit" button in the textbook that will send the user to the
+    associated codespaces environment.</p>
+<h3>5. Define tests to show the feature works correctly:</h3>
+<p>The button that will allow the author to edit his textbook will be tested
+    using various combinations of the following parameters (as well as any
+    others that we think of in the meantime):</p>
+<p class="MsoNormal"><sub><span
+            style="font-family: 'times new roman', times, serif;">1. User
+            authority level (should you be allowed to edit the
+            textbook)</span></sub></p>
+<p class="MsoNormal"><sub><span
+            style="font-family: 'times new roman', times, serif;">2. A sample
+            of the textbook&rsquo;s different pages (to make sure the button
+            works on chapter 5 as well as it does on chapter 1)</span></sub>
+</p>
+<p><sub><span
+            style="line-height: 107%; font-family: 'times new roman', times, serif;">3.
+            Window size (to make sure the button does not disappear or take
+            over the entire screen on low/high resolution
+            monitors)</span></sub></p>
+<h3>6. Outlines goals for the draft pull request and final pull request.</h3>
+<p class="MsoNormal"><span
+        style="font-family: 'times new roman', times, serif; font-size: 12pt;">By
+        our draft pull request, we should have a codespace built for the first
+        textbook. Our final pull request should include any updates that Dr.
+        Jones gives us on the draft pull request, as well as an "edit" button
+        that will directly send the user to the codespace to edit the
+        textbook.</span></p>
